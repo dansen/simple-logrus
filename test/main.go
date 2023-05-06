@@ -6,5 +6,6 @@ import (
 
 func main() {
 	println("Hello, world!")
+	log.SetOutput(true, "logfiles/test.log")
 	log.Infof("Hello, world!")
 }
