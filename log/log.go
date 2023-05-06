@@ -94,6 +94,21 @@ func setLogger() {
 	Panicln = logger.Panicln
 }
 
+func SetLevelName(level string) {
+	switch level {
+	case "info":
+		logger.SetLevel(log.InfoLevel)
+	case "debug":
+		logger.SetLevel(log.DebugLevel)
+	case "warn":
+		logger.SetLevel(log.WarnLevel)
+	case "error":
+		logger.SetLevel(log.ErrorLevel)
+	case "fatal":
+		logger.SetLevel(log.FatalLevel)
+	}
+}
+
 func SetLevel(level log.Level) {
 	logger.SetLevel(level)
 }
