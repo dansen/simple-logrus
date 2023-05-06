@@ -57,33 +57,33 @@ var (
 )
 
 func setLogger() {
-	Tracef = logger.Printf
-	Trace = logger.Print
-	Traceln = logger.Println
+	Tracef = logger.Tracef
+	Trace = logger.Trace
+	Traceln = logger.Traceln
 
-	Debugf = logger.Printf
-	Debug = logger.Print
-	Debugln = logger.Println
+	Debugf = logger.Debugf
+	Debug = logger.Debug
+	Debugln = logger.Debugln
 
-	Infof = logger.Printf
-	Info = logger.Print
-	Infoln = logger.Println
+	Infof = logger.Infof
+	Info = logger.Info
+	Infoln = logger.Infoln
 
 	Printf = logger.Printf
 	Print = logger.Print
 	Println = logger.Println
 
-	Warnf = logger.Printf
-	Warn = logger.Print
-	Warnln = logger.Println
+	Warnf = logger.Warnf
+	Warn = logger.Warn
+	Warnln = logger.Warnln
 
-	Warningf = logger.Printf
-	Warning = logger.Print
-	Warningln = logger.Println
+	Warningf = logger.Warningf
+	Warning = logger.Warning
+	Warningln = logger.Warningln
 
-	Errorf = logger.Printf
-	Error = logger.Print
-	Errorln = logger.Println
+	Errorf = logger.Errorf
+	Error = logger.Error
+	Errorln = logger.Errorln
 
 	Fatalf = logger.Fatalf
 	Fatal = logger.Fatal
