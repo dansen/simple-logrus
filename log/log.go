@@ -113,6 +113,10 @@ func SetLevel(level log.Level) {
 	logger.SetLevel(level)
 }
 
+func GetLogrusLogger() *log.Logger {
+	return logger
+}
+
 func SetOutput(console bool, logFilePath string) {
 	writers := make([]io.Writer, 0)
 
